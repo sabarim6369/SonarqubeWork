@@ -1,30 +1,22 @@
-docker run -d --name sonarqube \
-  -p 9000:9000 \
-  -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true \
-  sonarqube:latest
+
+docker run -d --name sonarqube -p 9000:9000 -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true sonarqube:latest   \
 
 
-or 
+🔹 3. Open SonarQube Dashboard \
+Once the container is up, open: \
 
 
-docker run -d --name sonarqube -p 9000:9000 -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true sonarqube:latest
-
-
-🔹 3. Open SonarQube Dashboard
-Once the container is up, open:
-
-
-http://localhost:9000
-Default credentials:
-Username: admin
-Password: admin
+http://localhost:9000 \
+Default credentials: \
+Username: admin \
+Password: admin \
 
 
 
 
 
-✅ Example: Scan a Node.js/React/Java Project
-Create a file in your project root:
+✅ Example: Scan a Node.js/React/Java Project  \
+Create a file in your project root:  \
 
 sonar-project.properties
 
