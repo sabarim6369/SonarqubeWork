@@ -18,22 +18,22 @@ Password: admin \
 ✅ Example: Scan a Node.js/React/Java Project  \
 Create a file in your project root:  \
 
-sonar-project.properties
+sonar-project.properties   \
 
 
-sonar.projectKey=myproject
-sonar.projectName=My Project
-sonar.sources=src
-sonar.host.url=http://localhost:9000
-sonar.login=<your-generated-token>
+sonar.projectKey=myproject    \
+sonar.projectName=My Project    \
+sonar.sources=src    \
+sonar.host.url=http://localhost:9000   \
+sonar.login=<your-generated-token>   \
 
 
 
-Run Scanner:
+Run Scanner:   \
 
-npx sonar-scanner
+npx sonar-scanner   \
 
-🔄 To Stop SonarQube
+🔄 To Stop SonarQube   \
 
-docker stop sonarqube
+docker stop sonarqube   \
 docker rm sonarqube
