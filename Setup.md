@@ -25,7 +25,7 @@ sonar.projectKey=myproject    \
 sonar.projectName=My Project    \
 sonar.sources=src    \
 sonar.host.url=http://localhost:9000   \
-sonar.login=<your-generated-token>   \
+sonar.login=code-arena-fullscreen-mode/**,compiler/**
 
 
 
