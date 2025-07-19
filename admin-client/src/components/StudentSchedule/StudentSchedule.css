@@ -1,0 +1,95 @@
+.student-schedule-container {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  flex-direction: column;
+  width: 70%;
+}
+.student-schedule-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.student-schedule-list {
+  display: flex;
+  overflow-y: auto;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-height: 20rem;
+}
+
+.student-schedule-item {
+  background: #fff;
+  border: 1px solid #6365f146;
+  padding: 1rem;
+  flex: 1;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  flex-direction: column;
+  display: flex;
+  gap: 0.7rem;
+height: fit-content;
+  width: 28em;
+  justify-content: center;
+  position: relative;
+}
+
+.task-label {
+  font-size: 1rem;
+  font-weight: 550;
+  margin-right: 0.5rem;
+}
+
+.date-list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  overflow-x: scroll;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.date-list::-webkit-scrollbar{
+  width: 0px;
+}
+.date-item {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.date-item.selected {
+  background-color: #6366f1;
+  color: white;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-status {
+  width: 1.7rem;
+  height: 1.7rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+
+}
+
+.completed {
+  color: green;
+}
+
+.ongoing {
+  color: rgba(0, 0, 255, 0.658);
+}
+
+.scheduled {
+  color: orange;
+}

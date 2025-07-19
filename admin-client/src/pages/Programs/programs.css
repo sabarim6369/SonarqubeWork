@@ -1,0 +1,242 @@
+.programs-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: hidden;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.programs-header-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.programs-title {
+  font-size: 1.7em;
+  font-weight: 650;
+  color: #333;
+}
+
+.programs-header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.programs-add-button {
+  background-color: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.3rem;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.programs-searchbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #d1d5db;
+  width: 20em;
+  height: 2.8em;
+}
+
+.programs-search-bar {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1em;
+  color: #333;
+  outline: none;
+  margin-left: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: "Montserrat";
+  background-color: transparent;
+}
+.programs-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.programs-content {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2.5em;
+  gap: 1em;
+  align-items: stretch;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.programs-content::-webkit-scrollbar{
+  width: 0px;
+
+}
+
+.program-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  padding: 1.2rem;
+  color: #374151;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32%;
+  gap: 1rem;
+  transition: all 0.2s ease;
+  max-height: fit-content;
+}
+
+.program-card:hover {
+  transform: scale(1.02);
+}
+
+.program-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.program-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.program-status {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.program-status.ongoing {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.program-status.completed {
+  background-color: #e5e7eb;
+  color: #6b7280;
+}
+
+.program-status.scheduled {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+.program-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.program-details p {
+  font-size: 0.9rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: #7a808d;
+  font-weight: 450;
+}
+
+.program-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.view-schedule-btn,
+.manage-btn {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid #645ce8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: #645ce8;
+}
+
+.view-schedule-btn {
+  background-color: transparent;
+}
+
+.view-schedule-btn:hover {
+  background-color: #635ce81a;
+}
+
+.manage-btn {
+  background-color: transparent;
+}
+
+.manage-btn:hover {
+  background-color: #635ce81a;
+}
+
+.program-progress {
+  margin-top: 0.5em;
+}
+
+.progress-text {
+  font-size: 0.75rem;
+  color: #4b5563;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.progress-container {
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  margin-top: 0.7em;
+}
+
+.progress-bar {
+  background: rgba(138, 96, 234, 1);
+  background: linear-gradient(
+    270deg,
+    rgba(138, 96, 234, 1),
+    rgba(160, 93, 224, 1)
+  );
+  height: 8px;
+  border-radius: 4px;
+  transition: width 2s ease-in-out;
+  width: 0%;
+}
+
+.no-items-found-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+}

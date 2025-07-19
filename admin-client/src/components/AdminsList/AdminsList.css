@@ -1,0 +1,62 @@
+.admins-list-container {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    width: 37.5rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .admins-list-title {
+    text-align: center;
+    margin-bottom: 0.9375rem;
+  }
+  
+  .admins-list-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admins-list-table th,
+  .admins-list-table td {
+    border: 0.0625rem solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  .admins-list-table th {
+    background: #f4f4f4;
+  }
+  
+  .admins-list-empty {
+    text-align: center;
+    color: gray;
+    padding: 0.625rem;
+  }
+  
+  .admins-list-delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.3125rem 0.625rem;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+  }
+  
+  .admins-list-delete-btn:hover {
+    background: #cc0000;
+  }
+  
+  .admins-list-close-btn {
+    display: block;
+    margin: 0.9375rem auto 0;
+    padding: 0.5rem 0.9375rem;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+  }
+  
+  .admins-list-close-btn:hover {
+    background: #000;
+  }

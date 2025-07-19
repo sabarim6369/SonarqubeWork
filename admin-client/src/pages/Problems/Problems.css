@@ -1,0 +1,335 @@
+.problems-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: hidden;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+}
+
+.problems-header-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.problems-title {
+  font-size: 1.7em;
+  font-weight: 650;
+  color: #333;
+}
+
+.problems-header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.problems-add-button {
+  background-color: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.3rem;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.problems-searchbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #d1d5db;
+  width: 20em;
+  height: 2.8em;
+}
+
+.problems-search-bar {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1em;
+  color: #333;
+  outline: none;
+  margin-left: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: "Montserrat";
+  background-color: transparent;
+}
+.problems-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.problems-content {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2.5em;
+  gap: 1em;
+  overflow-y: scroll;
+}
+
+.problems-content::-webkit-scrollbar {
+  width: 0px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 20rem;
+  flex: 1;
+  height: 15em;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.category-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.category-problem-length {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4f46e5;
+}
+
+.category-item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 0.9rem;
+  background-color: #ffffff;
+  border: 1.5px solid #6366f1;
+  color: #6366f1;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.category-item-button:hover {
+  background-color: #6366f1;
+  color: #ffffff;
+}
+
+.problem-view {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.problem-view-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+}
+
+.problem-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.problem-item {
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  transition: box-shadow 0.2s ease;
+  position: relative;
+}
+
+.problem-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.problem-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #111827;
+}
+
+.problem-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.6rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.problem-difficulty {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 10px;
+}
+
+.problem-difficulty.easy {
+  color: green;
+  background-color: rgba(138, 255, 177, 0.62);
+  padding: 0.2rem 1.2rem;
+}
+
+.problem-difficulty.medium {
+  color: orange;
+  background-color: rgba(255, 255, 138, 0.62);
+  padding: 0.2rem 1.2rem;
+}
+
+.problem-difficulty.hard {
+  color: red;
+  background-color: rgba(255, 165, 138, 0.62);
+  padding: 0.2rem 1.2rem;
+}
+
+.problem-platform {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.problem-link {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.problem-description {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.category-delete-button {
+  background-color: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: white;
+  font-weight: 550;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+
+.problem-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.problem-popup {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.problem-popup::-webkit-scrollbar {
+  width: 0px;
+}
+
+.problem-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.problem-edit-input,
+.problem-edit-textarea,
+.problem-edit-form select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.problem-edit-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.problem-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.problem-edit-button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.problem-edit-button:hover {
+  background-color: #4338ca;
+}
+
+.problem-delete-button {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.problem-delete-button:hover {
+  background-color: #dc2626;
+}

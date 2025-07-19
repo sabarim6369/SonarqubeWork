@@ -1,0 +1,376 @@
+.trainer-dashboard-container {
+  display: flex;
+  flex: 1;
+  background-color: #fbfbfb;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  gap: 2rem;
+  padding: 3rem;
+  position: relative;
+}
+
+.trainer-dashboard-container-right {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.trainer-dashboard-right-top {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  background-color: red;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background-color: #f5f5f5;
+  flex-direction: column;
+}
+
+.trainer-dashboard-right-bottom {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trainer-dashboard-container-left {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trainer-dashboard-left-top {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer-dashboard-left-top .top-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top-left-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+.trainer-dashboard-day {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.trainer-dashboard-progress-container {
+  width: 100%;
+  height: 0.8rem;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.trainer-dashboard-progress {
+  height: 100%;
+  background: rgba(138, 96, 234, 1);
+  background: linear-gradient(
+    270deg,
+    rgba(138, 96, 234, 1),
+    rgba(160, 93, 224, 1)
+  );
+  border-radius: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-percentage-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.trainer-dashboard-left-top .top-bottom {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.trainer-dashboard-left-bottom {
+  display: flex;
+  width: 100%;
+  height: 65%;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.trainer-dashboard-schedule-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  margin-top: 0.5rem;
+  overflow-y: scroll;
+}
+
+.trainer-task-item {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trainer-dashboard-task-action {
+  display: flex;
+  background-color: #e0e7ff;
+  color: #7a76dd;
+  font-weight: 550;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  margin-right: 2rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.trainer-dashboard-task-icon {
+  margin-right: 1rem;
+}
+
+.trainer-dashboard-task-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bg-completed {
+  background-color: #dcfce7;
+}
+
+.bg-ongoing {
+  background-color: #dbeafe;
+}
+
+.bg-scheduled {
+  background-color: #fbfde2;
+}
+
+.bg-missed {
+  background-color: #fde2e2;
+}
+
+.trainer-dashboard-schedule-filter select {
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9fafb;
+  color: #333;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  transition: border-color 0.3s, background-color 0.3s;
+  outline: none;
+}
+
+.trainer-dashboard-schedule-filter {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.trainer-dashboard-schedule-filter select option {
+  padding: 8px;
+  background-color: #fff;
+  color: #333;
+}
+
+.trainer-dashboard-search {
+  padding: 0.8rem 0.9rem;
+  height: fit-content;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+  border-radius: 10px;
+  color: #333;
+  font-size: 1rem;
+}
+
+.trainer-dashboard-program-list {
+  display: flex;
+  overflow-y: scroll;
+  flex: 1;
+  margin-top: 1.5rem;
+  border: 1px dashed #ccc;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  flex-direction: column;
+}
+
+.trainer-dashboard-program-list::-webkit-scrollbar {
+  width: 0px;
+}
+
+.trainer-dashboard-search-list {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  font-size: 0.9rem;
+  font-weight: 500;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7em;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.trainer-dashboard-search-list:hover {
+  background-color: #f0f0f0;
+}
+
+.trainer-present-button {
+  background-color: #dcfce7;
+  color: green;
+  padding: 0.5rem 0.4rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.trainer-absent-button {
+  background-color: #fde2e2;
+  color: red;
+  padding: 0.5rem 0.4rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  gap: 0.5rem;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.trainer-profile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 35rem;
+  height: 30rem;
+  background-color: #f4f4f4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 10px 10px 0px #8b5dff;
+  padding: 1.5rem;
+  z-index: 999999;
+}
+
+.trainer-profile-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.trainer-profile-bottom {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.1rem;
+}
+
+.trainer-present-button.disabled,
+.trainer-absent-button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #cccc;
+  color: #333;
+}
+
+.reset-password-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  width: 40%;
+  position: absolute;
+  height: 50%;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 10px 10px 0px #8b5dff;
+  padding: 1.5rem;
+}
+
+.reset-password-input input {
+  padding: 0.7rem;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.reset-password-input label {
+  font-size: 1rem;
+  font-weight: 550;
+  margin-right: 1rem;
+}

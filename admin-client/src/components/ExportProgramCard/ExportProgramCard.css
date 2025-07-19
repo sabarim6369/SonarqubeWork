@@ -1,0 +1,183 @@
+.export-program-container {
+  background: white;
+  width: 40rem;
+  max-width: 90%;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  width: 70%;
+}
+
+.export-program-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.export-program-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.export-program-search {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.clear-all-text {
+  color: #1a80b6;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.export-program-search input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.export-program-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.export-program-button {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.1rem;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.export-program-button:hover {
+  background: #4344a4;
+}
+
+.export-program-list {
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  max-height: 25rem;
+}
+
+.export-program-list::-webkit-scrollbar{
+  width: 0px;
+}
+
+.export-program-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  position: relative;
+  border: 1px solid #eee;
+  flex: 1;
+  border-radius: 20px;
+  min-width: 45%;
+  max-width: 50%;
+}
+
+.export-program-details {
+  flex: 1;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.export-program-item-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.export-program-item-description {
+  font-size: 1rem;
+  color: #666;
+  flex-wrap: wrap;
+  max-width: 15rem;
+}
+
+.export-program-item-college {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.export-program-item-status {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: #444;
+  position: absolute;
+  right: 0;
+  top: 0.1rem;
+  right: 0.5rem;
+}
+
+.status {
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.status.ongoing {
+  background-color: #28a74639;
+  color: green;
+}
+
+.status.scheduled {
+  background-color: rgba(255, 166, 0, 0.239);
+  color: orange;
+}
+
+.status.completed {
+  background-color: #dc3545;
+  color: white;
+}
+
+.view-more-button {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background-color: #3b81f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.view-more-button:hover {
+  background-color: #295bb2;
+}
+
+.export-program-more-details {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  background: #f9f9f9;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}

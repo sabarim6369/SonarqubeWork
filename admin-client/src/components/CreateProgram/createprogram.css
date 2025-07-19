@@ -1,0 +1,199 @@
+.create-program-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem 0rem;
+  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  z-index: 2000;
+  width: 60rem;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.create-program-header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #374151;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+
+.create-program-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1em;
+  overflow-y: auto;
+  padding: 0rem 2rem;
+}
+
+h3{
+    color: #333;
+}
+
+.create-program-form input,
+.create-program-form textarea,
+.create-program-form select {
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+ textarea{
+  font-family: Montserrat;
+}
+
+.create-program-trainer-label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.create-program-trainer-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+  color: #707070;
+}
+
+.status-radio-group {
+  display: flex;
+  gap: 0.8em;
+  flex-wrap: wrap;
+}
+
+.status-option {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  flex-direction: row;
+}
+
+.status-option input {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+.status-option label {
+  font-size: 0.9em;
+  color: #555;
+  font-weight: 500;
+}
+
+.create-program-trainer-select:focus {
+  border-color: #4f6d7a;
+  outline: none;
+}
+
+.create-program-trainer-option {
+  padding: 0.5rem;
+}
+
+.create-program-form input[type="date"] {
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  color: #7d7d7d;
+}
+
+.create-program-form input[type="date"]:focus {
+  border-color: #4caf50;
+  background-color: #fff;
+}
+
+.create-program-form input[type="date"]:disabled {
+  background-color: #e0e0e0;
+}
+
+.create-program-close-button {
+  cursor: pointer;
+}
+
+.create-program-form button {
+  padding: 0.8rem 1.5rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.create-program-form button:hover {
+  background-color: #45a049;
+}
+
+.daily-task-section {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.daily-task-section input {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+    margin-top: 2em;
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.task-item p {
+    margin: 0.3em 0;
+    color: #333;
+}

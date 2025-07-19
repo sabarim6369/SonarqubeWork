@@ -1,0 +1,154 @@
+.student-list-view {
+  display: flex;
+  padding: 2rem;
+  height: 80vh;
+  width: 70vw;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  border-radius: 8px;
+  box-shadow: 8px 8px 0px #6e4bc5;
+  flex-direction: column;
+}
+
+.student-list-view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-list {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.student-table th {
+  background-color: #d6d6d6;
+  color: white;
+  font-weight: bold;
+  color: #333;
+}
+
+.student-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.close-button {
+  color: #ff4d4d;
+  cursor: pointer;
+}
+
+.student-details-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  max-width: 90%;
+}
+
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-header h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+.close-button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #888;
+  transition: color 0.2s ease-in-out;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.student-details-modal{
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+}
+
+.student-modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+
+.student-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.student-modal-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+.platform-links {
+  margin-top: 0.8rem;
+}
+
+.platform-links a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.platform-links a:hover {
+  opacity: 0.7;
+}
+
+
+.leetcode {
+  color: #2c74b3;
+}
+
+.hackerrank {
+  color: #25c97b;
+}
+
+.codechef {
+  color: #ff9800;
+}

@@ -1,0 +1,108 @@
+.manage-program-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 8px 8px 0px #6E4BC5;
+  padding: 1.5rem;
+  width: 60%;
+min-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  justify-content: space-between;
+}
+
+.manage-program-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manage-program-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.manage-program-card-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ff4d4f;
+}
+
+.manage-program-card-details {
+  margin-top: 20px;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.grid-item input {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.grid-item select {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.manage-program-card-footer {
+  margin-top: 2rem;
+  text-align: center;
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manage-program-card-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.manage-program-card-button:hover {
+  background-color: #45a049;
+}
+.manage-program-card-student-list-btn{
+  background-color: #6983da;
+  padding: 0.5rem 1rem;
+  color: #f7f7f7;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+}

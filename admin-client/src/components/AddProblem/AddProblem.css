@@ -1,0 +1,133 @@
+.add-manual-task {
+  background-color: #fff;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.add-manual-task::-webkit-scrollbar {
+  width: 0px;
+}
+
+.add-manual-task__title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.add-manual-task__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.add-manual-task__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-manual-task__label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+
+.add-manual-task__input,
+.add-manual-task__textarea,
+.add-manual-task__select {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  resize: vertical;
+}
+
+.add-manual-task__textarea {
+  font-family: inherit;
+}
+
+.add-manual-task__test-case {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fafafa;
+}
+
+.add-manual-task__subfield {
+  margin-bottom: 1rem;
+}
+
+.add-manual-task__divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 1rem 0;
+}
+
+.add-manual-task__add-btn,
+.add-manual-task__remove-btn,
+.add-manual-task__submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-manual-task__remove-btn {
+  background-color: #dc3545;
+  margin-top: 0.5rem;
+}
+
+.add-manual-task__add-btn {
+  background-color: #28a745;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+.add-manual-task__submit-btn {
+  align-self: flex-end;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.add-manual-task__add-btn:hover {
+  background-color: #218838;
+}
+
+.add-manual-task__remove-btn:hover {
+  background-color: #c82333;
+}
+
+.add-manual-task__submit-btn:hover {
+  background-color: #0069d9;
+}
+
+.category-popup-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-popup-content{
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 500px;
+}
